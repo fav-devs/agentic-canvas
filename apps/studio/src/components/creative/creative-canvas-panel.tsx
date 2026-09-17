@@ -531,7 +531,7 @@ export function CreativeCanvasPanel({
 }
 
 /** Mime type for the internal page drag, so the canvas's file drop ignores it. */
-const PAGE_DRAG_TYPE = "application/x-agentic-canvas-page";
+const PAGE_DRAG_TYPE = "application/x-stencil-page";
 
 export function PageFilmstrip({
   pages,

@@ -138,7 +138,7 @@ export async function searchUnsplashPhotos(
 
 function withUnsplashAttribution(rawUrl: string) {
   const url = new URL(rawUrl);
-  url.searchParams.set("utm_source", "agentic-canvas");
+  url.searchParams.set("utm_source", "stencil");
   url.searchParams.set("utm_medium", "referral");
   return url.toString();
 }

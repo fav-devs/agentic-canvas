@@ -7,7 +7,7 @@ import {
   IconPlus,
   IconTrash,
 } from "@tabler/icons-react";
-import type { StudioProjectSummary } from "@agentic-canvas/studio";
+import type { StudioProjectSummary } from "@stencil/studio";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useCallback, useEffect, useState } from "react";
@@ -93,7 +93,7 @@ export function LocalProjectLibrary() {
               Local-first
             </p>
             <h1 className="mt-1 text-xl font-semibold tracking-tight">
-              Studio
+              Stencil
             </h1>
           </div>
           <span

@@ -1,6 +1,6 @@
-# Agentic Canvas
+# Stencil
 
-The standalone, local-first Next.js host for the Studio editor.
+The standalone, local-first Next.js app for the Stencil editor.
 
 ## Run it
 
@@ -8,7 +8,7 @@ From the repository root:
 
 ```bash
 pnpm install
-pnpm --filter @agentic-canvas/web dev
+pnpm --filter @stencil/web dev
 ```
 
 Open <http://localhost:3010>. Projects, uploaded assets, and fonts are stored in
@@ -17,8 +17,8 @@ editing and export workflow.
 
 ## Architecture
 
-- `@agentic-canvas/shared/creative` owns the document schema and command reducer.
-- `@agentic-canvas/studio` defines the host persistence contract and local IndexedDB adapter.
+- `@stencil/shared/creative` owns the document schema and command reducer.
+- `@stencil/studio` defines the host persistence contract and local IndexedDB adapter.
 - `apps/studio` owns the standalone project library and editor host.
 - `StudioHost` is the only boundary for persistence, assets, assistants,
   versioning, sharing, and publishing.

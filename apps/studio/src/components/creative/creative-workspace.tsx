@@ -8896,7 +8896,7 @@ function slugify(value: string) {
       .toLowerCase()
       .trim()
       .replace(/[^a-z0-9]+/g, "-")
-      .replace(/^-|-$/g, "") || "agentic-canvas-slide"
+      .replace(/^-|-$/g, "") || "stencil-slide"
   );
 }
 

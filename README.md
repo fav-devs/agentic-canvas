@@ -1,9 +1,6 @@
-# Agentic Canvas
+# Stencil
 
-> **The name is temporary.** “Agentic Canvas” describes the idea well enough
-> for now, but it is not necessarily the final project name.
-
-Agentic Canvas is a local-first, open-source visual editor for social graphics,
+Stencil is a local-first, open-source visual editor for social graphics,
 carousels, and video scenes. It works like the design editors people already
 understand: add text and media, arrange layers, group objects, work across
 pages, and export the result. The difference is that its document model and
@@ -65,7 +62,7 @@ changes, and join the same undo history as a human edit. The editor remains
 useful without an agent, while applications that have an AI backend can provide
 one through the `StudioHost` boundary.
 
-Agentic Canvas deliberately does not bundle a particular model vendor, API key
+Stencil deliberately does not bundle a particular model vendor, API key
 flow, or chat product. Those are host concerns rather than requirements of the
 canvas.
 
@@ -78,8 +75,8 @@ Requirements:
 - A modern browser with IndexedDB, Canvas, and Web Worker support
 
 ```bash
-git clone https://github.com/fav-devs/agentic-canvas.git
-cd agentic-canvas
+git clone https://github.com/fav-devs/stencil.git
+cd stencil
 pnpm install
 pnpm dev
 ```

@@ -14,12 +14,12 @@ const MODEL_ROOT = `https://huggingface.co/withoutbg/snap/resolve/${SNAP_REVISIO
  * Cache name carries the revision: keys are revision-bearing URLs, so a static
  * name would strand the old models forever when the revision moves.
  */
-export const SNAP_MODEL_CACHE = `agentic-canvas-snap-${SNAP_REVISION.slice(0, 12)}`;
+export const SNAP_MODEL_CACHE = `stencil-snap-${SNAP_REVISION.slice(0, 12)}`;
 
 /** Every cache this feature has ever used, for cleanup on revision bumps. */
 export const SNAP_CACHE_PREFIXES = [
-  "agentic-canvas-snap-",
-  "agentic-canvas-withoutbg-snap-",
+  "stencil-snap-",
+  "stencil-withoutbg-snap-",
 ];
 
 export type SnapModelKey = "depth" | "matting" | "refiner";

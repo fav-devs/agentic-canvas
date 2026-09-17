@@ -25,7 +25,7 @@ export function CreativeWorkspaceShell({
     <section className="min-h-0 flex-1 overflow-hidden bg-[var(--tray)]">
       <ResizablePanelGroup
         direction="horizontal"
-        autoSaveId="agentic-canvas-creative-workspace"
+        autoSaveId="stencil-creative-workspace"
         className="min-h-0"
       >
         <ResizablePanel defaultSize={20} minSize={14} maxSize={32}>

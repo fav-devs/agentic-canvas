@@ -17,7 +17,7 @@ import {
  * ago" is a fact about the person, not about the document they were in.
  */
 
-const KEY_PREFIX = "agentic-canvas.studio.recents:";
+const KEY_PREFIX = "stencil.studio.recents:";
 
 /** Enough for a scrolling row and a couple of screens of history. */
 const LIMIT = 24;

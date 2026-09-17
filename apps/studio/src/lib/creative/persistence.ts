@@ -9,7 +9,7 @@ import { creativeDocumentSchema, type CreativeDocument } from "./document";
  * moment the server catches up.
  */
 const backupKey = (documentId: string) =>
-  `agentic-canvas.studio.backup.${documentId}`;
+  `stencil.studio.backup.${documentId}`;
 
 export function writeCreativeBackup(
   documentId: string,

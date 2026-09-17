@@ -116,7 +116,7 @@ export function MediaLibraryPicker({
         <p className="py-4 text-center text-[11px] text-muted-foreground">
           {search
             ? "Nothing matches that search."
-            : "Images you upload anywhere in Agentic Canvas show up here."}
+            : "Images you upload anywhere in Stencil show up here."}
         </p>
       ) : (
         <ul className="grid grid-cols-3 gap-2">

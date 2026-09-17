@@ -678,7 +678,7 @@ function PhotoTile({
             </a>{" "}
             on{" "}
             <a
-              href="https://unsplash.com/?utm_source=agentic-canvas&utm_medium=referral"
+              href="https://unsplash.com/?utm_source=stencil&utm_medium=referral"
               target="_blank"
               rel="noreferrer"
               onClick={(event) => event.stopPropagation()}

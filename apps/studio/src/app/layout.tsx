@@ -4,8 +4,8 @@ import { Providers } from "./providers";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Studio",
-  description: "A local-first visual design studio.",
+  title: "Stencil",
+  description: "A local-first visual editor for people and AI agents.",
 };
 
 export default function RootLayout({ children }: { children: ReactNode }) {

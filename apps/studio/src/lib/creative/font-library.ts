@@ -58,7 +58,7 @@ export async function validateCreativeFontFile(file: File, family: string) {
   if (typeof FontFace === "undefined") return;
   try {
     const face = new FontFace(
-      `Agentic Canvas validation ${family}`,
+      `Stencil validation ${family}`,
       await file.arrayBuffer(),
     );
     await face.load();

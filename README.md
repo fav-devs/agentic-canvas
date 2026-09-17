@@ -3,9 +3,18 @@
 Agentic Canvas is a local-first, open-source visual design studio for creating
 social graphics, carousels, and video scenes with human and AI-assisted editing.
 
-The project is being extracted from the production editor that powers PostPal.
-The public core is intentionally separated from PostPal accounts, billing,
-cloud media, publishing, and other hosted services.
+The standalone editor is separated from accounts, billing, cloud media,
+publishing, and other hosted services through explicit provider interfaces.
+
+## Run locally
+
+```bash
+pnpm install
+pnpm dev
+```
+
+Open <http://localhost:3010>. Projects and imported assets stay in IndexedDB
+unless you export them.
 
 ## Direction
 
@@ -24,9 +33,9 @@ packages/shared   Canvas document model and command schema
 packages/studio   Local persistence and host capability contracts
 ```
 
-The independent build is currently being completed. Until the extraction audit
-is finished, the default branch contains only code that has been reviewed for
-public release.
+The local host is fully runnable. Assistant, version-history, cloud-media,
+sharing, and publishing integrations are optional `StudioHost` providers and
+are not included in the local browser bundle.
 
 ## License
 

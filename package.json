@@ -4,6 +4,7 @@
   "private": true,
   "packageManager": "pnpm@10.30.3",
   "scripts": {
+    "dev": "pnpm --filter @agentic-canvas/web dev",
     "build": "pnpm -r build",
     "check-types": "pnpm -r check-types"
   }

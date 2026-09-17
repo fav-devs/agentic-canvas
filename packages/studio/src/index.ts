@@ -46,6 +46,58 @@ export type StudioCapabilities = {
   versionHistory: boolean;
 };
 
+export type StudioMediaItem = {
+  id: string;
+  url: string;
+  filename: string;
+  mimeType: string;
+  width?: number | null;
+  height?: number | null;
+  thumbnailUrl?: string | null;
+};
+
+export interface StudioAssetProvider {
+  store(projectId: string, file: File): Promise<CreativeMediaAsset>;
+  list?(input?: {
+    query?: string;
+    page?: number;
+    pageSize?: number;
+  }): Promise<{ items: StudioMediaItem[]; total: number }>;
+}
+
+export interface StudioVersionProvider {
+  snapshot(projectId: string, label?: string): Promise<string>;
+  restore(projectId: string, versionId: string): Promise<CreativeDocument>;
+}
+
+export interface StudioAssistantProvider {
+  run(input: {
+    projectId: string;
+    document: CreativeDocument;
+    prompt: string;
+  }): Promise<{ commands: unknown[] }>;
+}
+
+export interface StudioPublishProvider {
+  share?(projectId: string): Promise<{ url: string }>;
+  sendToComposer?(files: File[]): Promise<void>;
+}
+
+/**
+ * Everything outside the canvas core enters through this host boundary. A
+ * browser-only build supplies only repository/assets; SaaS products can opt in
+ * to versions, assistants, sharing, and publishing without changing the editor.
+ */
+export interface StudioHost {
+  mode: "local" | "hosted";
+  capabilities: StudioCapabilities;
+  projects: StudioProjectRepository;
+  assets: StudioAssetProvider;
+  versions?: StudioVersionProvider;
+  assistant?: StudioAssistantProvider;
+  publishing?: StudioPublishProvider;
+}
+
 export const LOCAL_STUDIO_CAPABILITIES: StudioCapabilities = {
   assistant: false,
   cloudMedia: false,
@@ -58,3 +110,4 @@ export {
   createLocalStudioRepository,
   type LocalStudioRepositoryOptions,
 } from "./local-repository.js";
+export { createLocalStudioHost } from "./local-host.js";

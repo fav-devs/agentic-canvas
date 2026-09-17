@@ -3,4 +3,4 @@
  * anything server-side all read one definition of a design. Import path kept
  * so the ~20 call sites in the editor didn't have to churn.
  */
-export * from "@agentic-canvas/shared/creative";
+export * from "@stencil/shared/creative";

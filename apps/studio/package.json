@@ -1,5 +1,5 @@
 {
-  "name": "@agentic-canvas/web",
+  "name": "@stencil/web",
   "version": "0.1.0",
   "private": true,
   "type": "module",
@@ -10,8 +10,8 @@
     "check-types": "tsc --noEmit"
   },
   "dependencies": {
-    "@agentic-canvas/shared": "workspace:*",
-    "@agentic-canvas/studio": "workspace:*",
+    "@stencil/shared": "workspace:*",
+    "@stencil/studio": "workspace:*",
     "@radix-ui/react-context-menu": "^2.3.2",
     "@radix-ui/react-dialog": "^1.1.18",
     "@radix-ui/react-dropdown-menu": "^2.1.19",

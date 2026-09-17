@@ -1,7 +1,7 @@
 import type {
   CreativeDocument,
   CreativeMediaAsset,
-} from "@agentic-canvas/shared/creative";
+} from "@stencil/shared/creative";
 
 export type StudioProjectSummary = {
   id: string;

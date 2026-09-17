@@ -3,7 +3,7 @@ import {
   creativeDocumentSchema,
   type CreativeDocument,
   type CreativeMediaAsset,
-} from "@agentic-canvas/shared/creative";
+} from "@stencil/shared/creative";
 import type {
   HydratedStudioProject,
   StudioProjectRepository,

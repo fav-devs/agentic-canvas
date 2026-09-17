@@ -318,7 +318,7 @@ export const creativeVectorElementSchema = z.object({
   fill: z.string().min(1).max(100),
   recolorable: z.boolean(),
   source: z.object({
-    provider: z.enum(["iconify", "open-doodles", "agentic-canvas", "svgl"]),
+    provider: z.enum(["iconify", "open-doodles", "stencil", "svgl"]),
     assetId: z.string().min(1).max(200),
     license: z.string().min(1).max(80),
     author: z.string().min(1).max(200).optional(),

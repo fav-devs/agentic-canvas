@@ -1,4 +1,4 @@
-import { createLocalStudioHost } from "@agentic-canvas/studio";
+import { createLocalStudioHost } from "@stencil/studio";
 
 export const studioHost = createLocalStudioHost({
   profileId: "local",

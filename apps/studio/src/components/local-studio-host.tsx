@@ -3,7 +3,7 @@
 import dynamic from "next/dynamic";
 import { useRouter } from "next/navigation";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
-import type { CreativeDocument } from "@agentic-canvas/shared/creative";
+import type { CreativeDocument } from "@stencil/shared/creative";
 import type { GuestCreativeWorkspace } from "@/components/creative/creative-workspace";
 import { studioHost } from "./studio-repository";
 

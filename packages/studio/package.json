@@ -1,5 +1,5 @@
 {
-  "name": "@agentic-canvas/studio",
+  "name": "@stencil/studio",
   "version": "0.1.0",
   "private": true,
   "type": "module",
@@ -14,7 +14,7 @@
     "check-types": "tsc --noEmit"
   },
   "dependencies": {
-    "@agentic-canvas/shared": "workspace:*"
+    "@stencil/shared": "workspace:*"
   },
   "devDependencies": {
     "typescript": "5.9.3"

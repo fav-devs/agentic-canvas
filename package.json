@@ -1,10 +1,10 @@
 {
-  "name": "agentic-canvas",
+  "name": "stencil",
   "version": "0.1.0",
   "private": true,
   "packageManager": "pnpm@10.30.3",
   "scripts": {
-    "dev": "pnpm --filter @agentic-canvas/web dev",
+    "dev": "pnpm --filter @stencil/web dev",
     "build": "pnpm -r build",
     "check-types": "pnpm -r check-types"
   }

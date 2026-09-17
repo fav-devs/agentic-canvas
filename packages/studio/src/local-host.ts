@@ -1,8 +1,8 @@
 import {
   createLocalStudioRepository,
   type LocalStudioRepositoryOptions,
-} from "./local-repository.js";
-import type { StudioHost } from "./index.js";
+} from "./local-repository";
+import type { StudioHost } from "./index";
 
 export function createLocalStudioHost(
   options: LocalStudioRepositoryOptions = {},

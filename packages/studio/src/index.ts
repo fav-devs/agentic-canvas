@@ -109,5 +109,5 @@ export const LOCAL_STUDIO_CAPABILITIES: StudioCapabilities = {
 export {
   createLocalStudioRepository,
   type LocalStudioRepositoryOptions,
-} from "./local-repository.js";
-export { createLocalStudioHost } from "./local-host.js";
+} from "./local-repository";
+export { createLocalStudioHost } from "./local-host";

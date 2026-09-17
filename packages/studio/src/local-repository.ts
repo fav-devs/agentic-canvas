@@ -8,7 +8,7 @@ import type {
   HydratedStudioProject,
   StudioProjectRepository,
   StudioProjectSummary,
-} from "./index.js";
+} from "./index";
 
 const PROJECT_STORE = "projects";
 const ASSET_STORE = "assets";
